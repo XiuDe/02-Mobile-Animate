@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        div {
+            width: 2rem;
+            height: 2rem;
+            background-color: pink;
+        }
+        /*
+           方案一： less + 媒体查询 + rem 
+           1. 首先我们选一套标准尺寸 750为准 
+           2. 我们用屏幕尺寸 除以 我们划分的份数 得到了 html 里面的文字大小 但是我们知道不同屏幕下得到的文字大小是不一样的 */
+        /* 3. 页面元素的rem值 =  页面元素在 750像素的下px值 / html 里面的文字大小 */
+
+        /*
+           方案二： flexible.js + rem 
+        */
+
+        /*
+           1、iphone 4.5 ： 640px
+           2、iphone 678 ： 750px
+           3、Android ： 常见320px、360px、375px、384px、400px、414px、500px、720px、 大部分4.7~5寸的安卓设备为720px
+        */
+
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

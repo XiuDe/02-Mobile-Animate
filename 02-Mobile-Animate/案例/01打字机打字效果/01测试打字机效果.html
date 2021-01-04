@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01打字机效果</title>
+    <style>
+        div{
+            overflow: hidden;
+            font-size: 20px;
+            width: 0;
+            height: 30px;
+            animation: w 4s steps(10) forwards;
+            white-space: nowrap;
+        }
+        @keyframes w {
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>聚米电子商务有限公司</div>
+</body>
+</html>
